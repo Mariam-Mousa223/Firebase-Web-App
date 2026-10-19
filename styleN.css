@@ -1,0 +1,156 @@
+@import url('[https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap](https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap)');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2f3 0%, #8e9eab 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.auth-card, .dashboard-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-card {
+  max-width: 550px;
+}
+
+h2 {
+  color: #2d3748;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: #3182ce;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #2b6cb0;
+}
+
+.btn-logout {
+  width: auto;
+  padding: 8px 16px;
+  background-color: #e53e3e;
+  color: white;
+}
+
+.btn-logout:hover {
+  background-color: #c53030;
+}
+
+.toggle-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.toggle-text span {
+  color: #3182ce;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.task-item {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #3182ce;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit {
+  background: #dd6b20;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  width: auto;
+}
+
+.btn-delete {
+  background: #e53e3e;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  width: auto;
+}
+
+.error-message {
+  color: #e53e3e;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  text-align: center;
+}
